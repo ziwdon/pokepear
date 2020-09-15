@@ -6,9 +6,9 @@ An API to search for a pokemon and display its description as written by Shakesp
 
 - Python 3.8;
 - pip (package installer);
-- Flask;
-- PokeBase;
-- PyTest.
+- Flask (python library);
+- PokeBase (python library);
+- PyTest (python library).
 
 ## Installation
 
