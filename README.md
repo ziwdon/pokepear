@@ -6,17 +6,17 @@ An API to search for a pokemon and display its description as written by Shakesp
 
 - Python 3.8;
 - pip (package installer);
-- [Flask](https://flask.palletsprojects.com) (python library);
-- [PokeBase](https://pypi.org/project/pokebase/) (python library);
-- [PyTest](https://docs.pytest.org) (python library).
+- Flask;
+- PokeBase;
+- PyTest.
 
 ## Installation
 
 Install [Python 3.8](https://www.python.org/downloads/).
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following python libraries:
-- Flask;
-- PokeBase;
-- PyTest.
+- [Flask](https://flask.palletsprojects.com);
+- [PokeBase](https://pypi.org/project/pokebase/);
+- [PyTest](https://docs.pytest.org).
 
 Example:
 ```bash
