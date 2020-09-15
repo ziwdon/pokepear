@@ -29,7 +29,11 @@ Execute the **api.py** file to start the Flask server:
 ```bash
 python api.py
 ```
-Once the server is running, you can make a GET request to the API by using the following format **http://<host>:port/pokemon/<pokemon_name>**. A JSON response is returned with the pokemon description in Shakespear language.
+Once the server is running, you can make a GET request to the API by using the following format:
+```bash
+http://<host>:port/pokemon/<pokemon_name>
+```
+A JSON response is returned with the pokemon description in Shakespear language.
 
 By default, the server runs on **127.0.0.1:5000**. If you want to change this, make sure to edit the **api.py** file and edit the **app_host** and **app_port** variables.
   
