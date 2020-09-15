@@ -25,7 +25,7 @@ pip install flask
 
 ## Usage
 
-Execute the **api.py** file to start the Flask server: 
+Execute the **api.py** file to start the Flask server, as exemplified below (Windows): 
 ```bash
 python .\api.py
 ```
