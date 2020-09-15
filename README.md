@@ -31,7 +31,7 @@ python api.py
 ```
 Once the server is running, you can make a GET request to the API by using the following format:
 ```bash
-http://<host>:port/pokemon/<pokemon_name>
+http://<host>:<port>/pokemon/<pokemon_name>
 ```
 A JSON response is returned with the pokemon description in Shakespear language.
 
@@ -47,6 +47,23 @@ Response:
   "name": "charizard", 
   "description": "Charizard flies 'round the sky in search of powerful opponents. 't breathes fire of such most wondrous heat yond 't melts aught. However 't nev'r turns its fiery breath on any opponent weaker than itself."
 }
+```
+
+## Testing
+
+A simple testing framework is provided through the **api_test.py** file.
+You can edit this file to create custom tests. Alternatively, it is also possible to specify relative paths that you want to test against the API in the **test_list.txt** file. This text file contains a list of relative paths and the expected validation result separated by a comma.
+
+Example:
+```bash
+/pokemon/charizard, True
+/pokemon/thisisnotapokemon, False
+/digimon, False
+```
+
+To automatically execute all the tests, simply run the command below from the project directory:
+```bash
+pytest
 ```
 
 ## License
