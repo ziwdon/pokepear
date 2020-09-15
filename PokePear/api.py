@@ -20,7 +20,7 @@ API_SHAKESPEAR = 'https://api.funtranslations.com/translate/shakespeare.json' # 
 def home():
     pokemon = pokebase.pokemon_species('charizard')
     
-    return '<h1>PokePear API</h1><p>Use this API to search for a pokemon and display its description as written by Shakespear.</br>Example usage: <a href=\'http://127.0.0.1:5000/pokemon/ditto\'>http://127.0.0.1:5000/pokemon/ditto</a></p>'
+    return '<h1>PokePear API</h1><p>Use this API to search for a pokemon and display its description as written by Shakespear.</br>Example usage: <a href=\'/pokemon/ditto\'>http://127.0.0.1:5000/pokemon/ditto</a></p>'
 
 
 # Route 'pokemon' GET requests to 'pokemon' function.

@@ -29,8 +29,12 @@ def isJSON(response):
         return False
     return response.headers.get('content-type') == 'application/json'
 
-# Simple single test.
-def test():
+# Simple test to check whether the API is running.
+def test_api():
+    assert api_get('/').status_code == 200
+
+# Simple test to validate the API with a pokemon name.
+def test_pokemon():
     assert is_valid_request(api_get('/pokemon/charizard'))
     
 # Extract a list of paths to test, and the expected result, from a file and test them against the API.
