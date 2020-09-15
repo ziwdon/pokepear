@@ -6,9 +6,9 @@ An API to search for a pokemon and display its description as written by Shakesp
 
 - Python 3.8;
 - pip (package installer);
-- Flask (python library);
-- PokeBase (python library);
-- PyTest (python library).
+- [Flask](https://flask.palletsprojects.com) (python library);
+- [PokeBase](https://pypi.org/project/pokebase/) (python library);
+- [PyTest](https://docs.pytest.org) (python library).
 
 ## Installation
 
@@ -27,7 +27,7 @@ pip install flask
 
 Execute the **api.py** file to start the Flask server: 
 ```bash
-python api.py
+python .\api.py
 ```
 Once the server is running, you can make a GET request to the API by using the following format:
 ```bash
@@ -37,9 +37,9 @@ A JSON response is returned with the pokemon description in Shakespear language.
 
 By default, the server runs on **127.0.0.1:5000**. If you want to change this, make sure to edit the **api.py** file and edit the **app_host** and **app_port** variables.
   
-Example usage:
+Example usage using [HTTPie](https://httpie.org/):
 ```bash
-http://127.0.0.1:5000/pokemon/charizard
+http http://127.0.0.1:5000/pokemon/charizard
 ```
 Response:
 ```bash
@@ -65,6 +65,20 @@ To automatically execute all the tests, simply run the command below from the pr
 ```bash
 pytest
 ```
+
+## Dockerfile
+
+A dockerfile is also provided to execute the script and instantiate the server in a docker container.
+You can build and run the docker image using the commands below. Make sure that the **api.py**, **requirements.txt**, and **dockerfile** exist within the same directory.
+```bash
+docker build -t dockerfile .
+docker run -it --rm --name app dockerfile
+```
+
+## Thanks to
+
+- [Shakespear translator](https://funtranslations.com/api/shakespeare);
+- [PokeAPI](https://pokeapi.co/).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
