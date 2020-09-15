@@ -1,0 +1,7 @@
+/pokemon/charizard, True
+/pokemon/pikachu, True
+/pokemon/thisisnotapokemon, False
+/pokemon/, False
+/, False
+/notapath, False
+/digimon, False
