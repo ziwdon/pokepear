@@ -27,7 +27,7 @@ pip install flask
 
 Execute the **api.py** file to start the Flask server: 
 ```bash
-python api.py
+python .\api.py
 ```
 Once the server is running, you can make a GET request to the API by using the following format:
 ```bash
