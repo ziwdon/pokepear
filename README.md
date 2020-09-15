@@ -66,5 +66,14 @@ To automatically execute all the tests, simply run the command below from the pr
 pytest
 ```
 
+## Dockerfile
+
+A dockerfile is also provided to execute the script and instantiate the server in a docker container.
+You can build and run the docker image using the commands below. Make sure that the **api.py**, **requirements.txt**, and **dockerfile** exist within the same directory.
+```bash
+docker build -t dockerfile .
+docker run -it --rm --name app dockerfile
+```
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
