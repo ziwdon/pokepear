@@ -17,9 +17,7 @@ API_SHAKESPEAR = 'https://api.funtranslations.com/translate/shakespeare.json' # 
 # Route root GET requests to 'home' function.
 # This is the root index page.
 @app.route('/', methods=['GET'])
-def home():
-    pokemon = pokebase.pokemon_species('charizard')
-    
+def home():    
     return '<h1>PokePear API</h1><p>Use this API to search for a pokemon and display its description as written by Shakespear.</br>Example usage: <a href=\'/pokemon/ditto\'>http://127.0.0.1:5000/pokemon/ditto</a></p>'
 
 
