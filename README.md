@@ -6,17 +6,17 @@ An API to search for a pokemon and display its description as written by Shakesp
 
 - Python 3.8;
 - pip (package installer);
-- [Flask](https://flask.palletsprojects.com) (python library);
-- [PokeBase](https://pypi.org/project/pokebase/) (python library);
-- [PyTest](https://docs.pytest.org) (python library).
+- Flask (python library);
+- PokeBase (python library);
+- PyTest (python library).
 
 ## Installation
 
 Install [Python 3.8](https://www.python.org/downloads/).
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following python libraries:
-- Flask;
-- PokeBase;
-- PyTest.
+- [Flask](https://flask.palletsprojects.com);
+- [PokeBase](https://pypi.org/project/pokebase/);
+- [PyTest](https://docs.pytest.org).
 
 Example:
 ```bash
@@ -25,7 +25,7 @@ pip install flask
 
 ## Usage
 
-Execute the **api.py** file to start the Flask server: 
+Execute the **api.py** file to start the Flask server, as exemplified below (Windows): 
 ```bash
 python .\api.py
 ```
@@ -52,7 +52,12 @@ Response:
 ## Testing
 
 A simple testing framework is provided through the **api_test.py** file.
-You can edit this file to create custom tests. Alternatively, it is also possible to specify relative paths that you want to test against the API in the **test_list.txt** file. This text file contains a list of relative paths and the expected validation result separated by a comma.
+You can edit this file to create custom tests. The following test methods currently exist:
+- test_api() - Simple test to check whether the API is running;
+- test_pokemon() - Simple test to validate the API with a pokemon name;
+- test_list() - Extract a list of paths to test and the expected result from a file, and test them against the API.
+
+The **test_list()** method allows you to test a list of relative paths against the API, as detailed in the **test_list.txt** file. This text file contains a list of relative paths and the expected validation result separated by a comma.
 
 Example:
 ```bash
